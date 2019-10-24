@@ -14,6 +14,7 @@ def directors_totals(nds)
   }
   i = 0 
   j = 0
+  directors_hash = {}
   while i < nds.length do
     while j < nds[i][:movies].length do
       p nds[i][:movies][j]
@@ -21,10 +22,11 @@ def directors_totals(nds)
       total += money
       j += 1
     end
+    directors_hash = {nds[i][:name]
     i += 1
     j = 0
+    total = 0
   end
-  return total
 end 
 
 directors_totals(directors_database())
