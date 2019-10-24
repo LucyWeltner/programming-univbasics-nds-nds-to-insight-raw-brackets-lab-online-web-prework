@@ -22,7 +22,7 @@ def directors_totals(nds)
       total += money
       j += 1
     end
-    directors_hash = {nds[i][:name]
+    directors_hash[nds[i][:name]] = total
     i += 1
     j = 0
     total = 0
