@@ -15,7 +15,7 @@ def directors_totals(nds)
   i = 0 
   j = 0
   while i < nds.length do
-    while j < nds[i].length do
+    while j < nds[i][:movies].length do
       p nds[i][:movies][j]
       money = nds[i][:movies][j][:worldwide_gross]
       total += money
