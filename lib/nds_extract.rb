@@ -3,7 +3,6 @@ require 'directors_database'
 require 'pp'
 
 def directors_totals(nds)
-  p nds[0][:name]
   total = 0
   # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
@@ -17,7 +16,6 @@ def directors_totals(nds)
   directors_hash = {}
   while i < nds.length do
     while j < nds[i][:movies].length do
-      p nds[i][:movies][j]
       money = nds[i][:movies][j][:worldwide_gross]
       total += money
       j += 1
