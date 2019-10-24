@@ -27,6 +27,7 @@ def directors_totals(nds)
     j = 0
     total = 0
   end
+  return directors_hash
 end 
 
 directors_totals(directors_database())
